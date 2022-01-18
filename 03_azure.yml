@@ -1,0 +1,13 @@
+
+---
+- hosts: localhost
+  connection: local
+  vars:
+    user: user6admin
+  tasks:
+  - name: Delete resource group
+    azure_rm_resourcegroup:
+      name: "webserver_{{ user }}"
+      location: northeurope
+      state: absent
+      force_delete_nonempty: yes
