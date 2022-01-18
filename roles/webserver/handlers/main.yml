@@ -1,8 +1,5 @@
 ---
 # handlers file for webserver
-
----
-# handlers file for webserver
 - name: firewall reload
   ansible.builtin.systemd:
     name: firewalld
