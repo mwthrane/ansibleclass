@@ -1,8 +1,5 @@
 ---
 # defaults file for webserver
-
----
-# defaults file for webserver
 package:
     - httpd
     - mod_ssl
